@@ -1,12 +1,12 @@
 {
-  "name": "@yao-pkg/pkg",
+  "name": "@liongard/pkg",
   "version": "5.11.4",
   "description": "Package your Node.js project into an executable",
   "main": "lib-es5/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yao-pkg/pkg.git"
+    "url": "git+https://github.com/cole-mujadzic-liongard/pkg.git"
   },
   "types": "lib-es5/index.d.ts",
   "bin": {
