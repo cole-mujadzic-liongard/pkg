@@ -21,7 +21,7 @@ This command line interface enables you to package your Node.js project into an 
 ## Usage
 
 ```sh
-npm install -g @yao-pkg/pkg
+npm install -g @liongard/pkg
 ```
 
 After installing it, run `pkg --help` without arguments to see list of options:

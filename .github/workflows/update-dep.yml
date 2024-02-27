@@ -8,7 +8,7 @@ on:
       dep:
         description: 'Dependency'
         required: true
-        default: '@yao-pkg/pkg-fetch'
+        default: '@liongard/pkg-fetch'
       version:
         description: 'Version'
         required: false
@@ -52,10 +52,10 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "feat: bump ${{github.event.inputs.dep}}@${{ steps.check.outputs.version }}"
-          branch: "${{github.event.inputs.dep}}@${{ steps.check.outputs.version }}"
+          commit-message: 'feat: bump ${{github.event.inputs.dep}}@${{ steps.check.outputs.version }}'
+          branch: '${{github.event.inputs.dep}}@${{ steps.check.outputs.version }}'
           delete-branch: true
-          title: "feat: bump ${{github.event.inputs.dep}}@${{ steps.check.outputs.version }}"
+          title: 'feat: bump ${{github.event.inputs.dep}}@${{ steps.check.outputs.version }}'
           body: |
             Update ${{github.event.inputs.dep}} to version ${{ steps.check.outputs.version }}
           labels: |
